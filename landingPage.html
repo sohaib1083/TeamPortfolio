@@ -1,35 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Portfolio</title>
+    <link rel="stylesheet" href="memberstyle.css">
+    <script src="https://kit.fontawesome.com/cafc4c1d19.js" crossorigin="anonymous"></script>
+    <style>
+        /* Reset some default styles */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #080808;
+            color: #fff;
+        }
+
+        #header {
+            width: 100%;
+            height: 100vh;
+            background-image: url(images/home.png);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .container {
+            padding: 10px 10%;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            width: 140px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .logo:hover {
+            transform: rotate(360deg);
+        }
+
+        .header-text {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+        }
+
+        .header-text h1 {
+            font-size: 60px;
+            margin-top: 20px;
+        }
+
+        .span1 {
+            color: ff004f;
+        }
+
+        .copyright {
+            width: 100%;
+            text-align: center;
+            padding: 25px 0;
+            background: #262626;
+            font-weight: 300;
+            margin-top: 20px;
+        }
+
+        .copyright i {
+            color: #ff004f;
+        }
+    </style>
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="logo.png" alt="Team Logo">
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/port.png" alt="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#header" class="dropbtn">About</a>
+                        <div class="dropdown-content">
+                            <a href="member.html">Sohaib</a>
+                            <a href="member2.html">Anas</a>
+                            <a href="member3.html">Azka</a>
+                            <a href="member4.html">Om</a>
+                        </div>
+                    </li>
+
+                    <li><a href="#header">Services</a></li>
+                    <li><a href="#header">Portfolio</a></li>
+                    <li><a href="#header">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Welcome to<br>Our Portfolio</h1>
+            </div>
+        </div>
     </div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  
-  <header class="landing-header">
-    <h1>Welcome to Our Portfolio</h1>
-    <p>We are a creative team passionate about Web Development.</p>
-    <a href="#portfolio" class="cta-button">View Our Work</a>
-  </header>
-  
-  <!-- Other sections (About, Portfolio, Contact) can be added here -->
-  
-  <footer class="footer">
-    <p>&copy; 2023 SayabiDevs. All rights reserved.</p>
-  </footer>
+
+    <div class="container">
+        <div class="copyright">
+            <p>Copyright @Sayabidevs with <i class="fas fa-heart"> </i></p>
+        </div>
+    </div>
+
 </body>
+
 </html>
